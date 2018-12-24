@@ -1,1 +1,1 @@
-# These are some of the first projects I made! Sorry if they're buggy and don't scale properly, this was when I first learned to code!
+# These are some of the first projects I made! Sorry if they're buggy and don't scale properly
