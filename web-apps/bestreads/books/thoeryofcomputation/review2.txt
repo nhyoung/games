@@ -1,3 +1,0 @@
-Foo B. Baz
-5
-Yay finite state machines :D
