@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+  HTML for Bestreads Assignment for CSE 154 HW4.
+  DO NOT MODIFY THIS HTML.
+  Updated for Spring 2019.
+-->
+
+<html lang=en>
+  <head>
+    <title>Bestreads</title>
+    <link rel="stylesheet" href="bestreads.css" />
+    <!-- Your job is to implement bestreads.js file: -->
+    <script src="bestreads.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>best<span>reads</span></h1>
+      <nav>
+        <div id="search-bar">
+          <input id="search-term" type="text">
+          <button id="search-btn" class="selectable">search</button>
+        </div>
+        <div id="btn-container">
+          <button id="back" class="selectable hidden">back</button>
+          <button id="home" class="selectable" disabled>home</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Error Message View -->
+      <h3 id="error-text" class="hidden"></h3>
+
+      <!-- Book List View -->
+      <article id="book-list"></article>
+
+      <!-- Single Book View -->
+      <section id="single-book" class="hidden">
+        <div>
+          <!-- Set to a provided tiny transparent img. Change the src as necessary -->
+          <img id="book-cover" src="images/small-transparent-pixel.png" alt="book cover"/>
+          <article id="book-info">
+            <h1 id="book-title"></h1>
+            <h2 id="book-author"></h2>
+            <p>Overall rating: <span id="book-rating"></span></p>
+            <p id="book-description"></p>
+          </article>
+        </div>
+        <article id="book-reviews"></article>
+      </section>
+    </main>
+  </body>
+</html>

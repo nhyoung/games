@@ -1,0 +1,162 @@
+/*
+  CSS for Bestreads Assignment for CSE 154 HW4.
+  DO NOT MODIFY THIS CSS.
+  Updated for Spring 2019.
+*/
+button, body, input {
+  background-color: #fefcf4;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin: 0px;
+}
+
+h2 {
+  border-bottom: 1px solid #e4e1da;
+}
+
+h3, h4 {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+header {
+  background-image: url("images/books.jpg");
+  box-shadow: 0 5px 5px lightgray;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+header > h1 {
+  color: #939384;
+  font-family: Tahoma, sans-serif;
+  font-size: 36pt;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+header > h1 > span {
+  font-weight: bold;
+}
+
+nav {
+  align-items: flex-end;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+button, input {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+button {
+  border: #8e7b61 solid 1px;
+  color: #8e7b61;
+  font-size: 18pt;
+  height: 40px;
+  width: 80px;
+  padding: 3px;
+  margin-bottom: 7px;
+}
+
+/* Make home button more visibly disabled with bestreads color theme */
+button:disabled {
+  color: #c5c0b8;
+  border-color: #c5c0b8;
+  cursor: auto; /* remove pointer cursor when disabled */
+}
+
+#search-bar {
+  margin-top: 1.5vw;
+}
+
+input {
+  font-size: 16pt;
+  height: 35px;
+  width: 300px;
+}
+
+nav, #search-bar, #book-list, #single-book, #single-book > div {
+  display: flex;
+}
+
+#book-list {
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#single-book {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for each book "card" in the book list */
+#book-list div {
+  background-color: #f4f1eb;
+  border-radius: 5px;
+  box-shadow: 0 0 15px gray;
+  width: 200px;
+  height: 330px;
+  padding: 5px 5px 0px 5px;
+  margin: 20px;
+}
+
+/* Dimensions of book cover images */
+#book-list img {
+  height: 220px;
+  width: 150px;
+}
+
+#single-book > div {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#book-info {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#book-info > h1, #book-info > h2 {
+  font-size: 16pt;
+}
+
+#book-reviews {
+  clear: left;
+  margin: auto;
+  padding-top: .5em;
+  width: 70%;
+}
+
+#book-reviews p {
+  margin-top: 0px;
+  padding-bottom: .5em;
+}
+
+#single-book img, #book-info, #error-text {
+  margin-top: 50px;
+}
+
+#book-list div, #book-reviews, #error-text {
+  text-align: center;
+}
+
+#single-book img {
+  width: 200px;
+  margin-left: 15%;
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+.hidden, #book-list.hidden, #single-book.hidden {
+  display: none;
+}
