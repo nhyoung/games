@@ -1,1 +1,1 @@
-# Welcome, these are my projects!
+# java games and JS projects
